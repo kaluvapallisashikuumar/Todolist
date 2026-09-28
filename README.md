@@ -9,7 +9,6 @@ A simple and responsive Todo List web application built using **HTML, CSS, and J
 - 🗑️ Delete tasks
 - 📱 Responsive design
 - 🎨 Clean and simple user interface
-- ⚡ Fast and lightweight
 
 ## 🛠️ Technologies Used
 
@@ -20,9 +19,9 @@ A simple and responsive Todo List web application built using **HTML, CSS, and J
 ## 📂 Project Structure
 
 ```text
-Todolist-main/
+todo-list-app/
 │
-├── todosapp1015.html
-├── todosapp1015.css
-├── todosapp1015.js
-└── README.md
+├── README.md
+├── index.html
+├── style.css
+└── script.js
