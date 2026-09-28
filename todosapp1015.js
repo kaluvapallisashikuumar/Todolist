@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 6f7094d68c26fc1915e5d1091a56eb0a1c22fc52
 let todoItemsContainer = document.getElementById("todoItemsContainer");
 let addTodoButton = document.getElementById("addTodoButton");
 let saveTodoButton = document.getElementById("saveTodoButton");
@@ -48,7 +45,6 @@ addTodoButton.onclick = function() {
     onAddTodo();
 };
 
-<<<<<<< HEAD
 function onTodoStatusChange(checkboxId, labelId, todoId) {
     let checkboxElement = document.getElementById(checkboxId);
     let labelElement = document.getElementById(labelId);
@@ -73,8 +69,6 @@ function onTodoStatusChange(checkboxId, labelId, todoId) {
     }
 }
 
-=======
->>>>>>> 6f7094d68c26fc1915e5d1091a56eb0a1c22fc52
 function onDeleteTodo(todoId) {
     let todoElement = document.getElementById(todoId);
     todoItemsContainer.removeChild(todoElement);
@@ -91,32 +85,6 @@ function onDeleteTodo(todoId) {
     todoList.splice(deleteElementIndex, 1);
 }
 
-<<<<<<< HEAD
-=======
-function onTodoStatusChange(checkboxId, labelId, todoId) {
-    let checkboxElement = document.getElementById(checkboxId);
-    let labelElement = document.getElementById(labelId);
-    labelElement.classList.toggle("checked");
-
-    let todoObjectIndex = todoList.findIndex(function(eachTodo) {
-        let eachTodoId = "todo" + eachTodo.uniqueNo;
-        if (eachTodoId === todoId) {
-            return true;
-        } else {
-            return false;
-        }
-    });
-
-    let todoObject = todoList[todoObjectIndex];
-
-    if (todoObject.isChecked === true) {
-        todoObject.isChecked = false;
-    } else {
-        todoObject.isChecked = true;
-    }
-}
-
->>>>>>> 6f7094d68c26fc1915e5d1091a56eb0a1c22fc52
 function createAndAppendTodo(todo) {
     let todoId = "todo" + todo.uniqueNo;
     let checkboxId = "checkbox" + todo.uniqueNo;
@@ -149,11 +117,7 @@ function createAndAppendTodo(todo) {
     labelElement.classList.add("checkbox-label");
     labelElement.textContent = todo.text;
     if (todo.isChecked === true) {
-<<<<<<< HEAD
         labelElement.classList.add("checked")
-=======
-        labelElement.classList.add("checked");
->>>>>>> 6f7094d68c26fc1915e5d1091a56eb0a1c22fc52
     }
 
     labelContainer.appendChild(labelElement);
