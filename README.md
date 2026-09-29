@@ -2,6 +2,10 @@
 
 A simple and responsive Todo List web application built using **HTML, CSS, and JavaScript**.
 
+## 🌐 Live Demo
+
+👉 **[View Todo List App](https://todo-list-app-sasi-kumar.vercel.app/)**
+
 ## 🚀 Features
 
 - ➕ Add new tasks
